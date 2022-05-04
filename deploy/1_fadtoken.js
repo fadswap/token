@@ -11,4 +11,12 @@ module.exports = async ({ getNamedAccounts, deployments, getChainId }) => {
   });
 
   console.log('FADToken deployed to:', fadTokenDeployment.address);
+
+  console.log("Verifying contract");
+
+  await hre.run('verify:verify', {
+    address: fadTokenDeployment.address,
+  });
+
+  console.log("Contract verified");
 };

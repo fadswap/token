@@ -3,10 +3,12 @@
  */
 require('dotenv').config({path:__dirname+'/.env'})
 require("@nomiclabs/hardhat-waffle");
+require('@nomiclabs/hardhat-ethers');
+require("@nomiclabs/hardhat-etherscan");
 require('solidity-coverage');
 require('hardhat-deploy');
 
-const { MNEMONIC } = process.env
+const { MNEMONIC, BSCSCAN_API_KEY } = process.env
 
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   const accounts = await hre.ethers.getSigners();
@@ -48,6 +50,11 @@ module.exports = {
       gasPrice: 20000000000,
       accounts: {mnemonic: MNEMONIC}
     }
+  },
+  etherscan: {
+    // Your API key for Etherscan
+    // Obtain one at https://bscscan.com/
+    apiKey: BSCSCAN_API_KEY
   },
   namedAccounts: {
     deployer: {
