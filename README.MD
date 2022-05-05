@@ -5,4 +5,5 @@ Name: **FAD Swap**
 Symbol: **$FAD**  
 Decimal: **18**  
 Total Supply: **100,000,000**  
-Contract Address: **[0x00000000000000000000000000000000000](https://bscscan.com/token/0x)**  
+Contract Address: **0xe04c2f2dd2c993132476a8edc205c91d8c727cd9**  
+Explorer: **[https://bscscan.com/token/0xe04c2f2dd2c993132476a8edc205c91d8c727cd9](https://bscscan.com/token/0xe04c2f2dd2c993132476a8edc205c91d8c727cd9)**  
