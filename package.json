@@ -28,6 +28,7 @@
     "coverage": "hardhat coverage",
     "compile": "hardhat compile",
     "deploy-local": "hardhat --network localhost deploy",
+    "deploy-ganache": "hardhat --network ganache deploy",
     "lint:sol": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
     "lint:sol:fix": "solhint --max-warnings 0 \"contracts/**/*.sol\" --fix",
     "lint": "yarn run lint:sol",

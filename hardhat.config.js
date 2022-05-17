@@ -36,6 +36,12 @@ module.exports = {
       saveDeployments: true,
       tags: ["local"]
     },
+	ganache: {
+      url: "http://127.0.0.1:8545",
+      live: false,
+      saveDeployments: true,
+      tags: ["local"]
+    },
     hardhat: {
     },
     bsc_testnet: {
